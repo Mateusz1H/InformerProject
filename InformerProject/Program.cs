@@ -7,6 +7,20 @@ using System.Threading.Tasks;
 
 namespace InformerProject
 {
+
+    //ConfigurationFile - Ta zmienna jest nie potrzebna, będziemy kożystać ze standardowego mechanizmu do konfiguracji 
+    //Nie widzę drugiego projektu o którym rozmawialiśmy, biblioteki z funkcjami aplikacji, logika (rdzeń systemu) powinna być odseparowana od interfejsu użytkownika 
+
+    //Nie widzę jeszcze żadnych klas, obiektów?
+
+    //Proszę o zmianę nazwę solucji:
+    //Przjmujemy konwencję:
+    //Solucja będzie nazwyać się "chmura24.ServiceUpdater"
+    //Projekty kolejno:
+    //1. chumra24.ServiceUpdater.Core - projekt, biblioteka narzędziowa z funkcjami projektu 
+    //2. chmura24.ServiceUpdater.Service - aplikacja konsolowa wykonująca funkcje narzędziowe z projektu Core. 
+    //   Aplikacja ta ma mieć możliwość uruchomienia w trybie usługi. Do zrobienia w przyszłości.
+
     internal class Program
     {
         private static string ConfigurationFile = "Config.cfg";                                     //przyjecie nazwy konfiguracyjnej pliku
